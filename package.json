@@ -1,0 +1,43 @@
+{
+  "name": "bookingmgmnt",
+  "version": "1.0.0",
+  "description": "Booking Manamgement System to book and manage the slots.",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "author": "Mohammad Amjad Khilji",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "luxon": "^3.6.1",
+    "mongoose": "^8.15.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "nodemonconfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    },
+    "delay": "2500",
+    "watch": [
+      "app.js",
+      "routes/"
+    ],
+    "ext": "js,json"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.4.0",
+    "node-mocks-http": "^1.17.2",
+    "proxyquire": "^2.1.3",
+    "sinon": "^20.0.0",
+    "supertest": "^7.1.1"
+  }
+}
