@@ -36,8 +36,8 @@ bookingmgmt/
 ### Installation
 1. Clone the repository:
    ```
-   git clone <your-repo-url>
-   cd bookingmgmt
+   git clone https://github.com/mamjadkhilji/nodejs-bookingmgmt.git
+   cd nodejs-bookingmgmt
    ```
 2. Install dependencies:
    ```
